@@ -4,9 +4,9 @@ Xfers Test Movie App using Flutter
 
 ## Screenshots
 
-| HomeScreen | DetailScreen |
-|---|---|
-|![alt HomeScreen](./screenshot/Screenshot_1617510990.png) | ![alt DetailSCreen](./screenshot/Screenshot_1617511004.png) |
+| SplashScreen | HomeScreen | DetailScreen |
+|---|---|---|
+|![alt HomeScreen](./screenshot/Screenshot_1617511996.png) |![alt HomeScreen](./screenshot/Screenshot_1617510990.png) | ![alt DetailSCreen](./screenshot/Screenshot_1617511004.png) |
 
 
 ## Getting Started
