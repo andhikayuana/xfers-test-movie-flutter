@@ -30,6 +30,43 @@ class MovieCard extends StatelessWidget {
                 color: Colors.red,
               ),
             ),
+            Padding(
+              padding: EdgeInsets.all(8),
+              child: Column(
+                children: [
+                  Container(
+                    width: 245,
+                    child: Text(
+                      movie.title,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      style: Theme.of(context).textTheme.headline6,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 4,
+                  ),
+                  Container(
+                    width: 245,
+                    child: Text(
+                      movie.release_date,
+                      style: Theme.of(context).textTheme.caption,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Container(
+                    width: 245,
+                    child: Text(
+                      movie.overview,
+                      maxLines: 5,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
