@@ -1,6 +1,13 @@
 # flutter_movie_app
 
-A new Flutter project.
+Movie App Flutter : Superman Movies
+
+## Screenshots
+
+| HomeScreen | DetailScreen |
+|---|---|
+|![alt HomeScreen](./screenshot/Screenshot_1617510990.png) | ![alt DetailSCreen](./screenshot/Screenshot_1617511004.png) |
+
 
 ## Getting Started
 
