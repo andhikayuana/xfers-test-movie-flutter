@@ -1,6 +1,6 @@
-# flutter_movie_app
+# Xfers Movie App: Superman
 
-Movie App Flutter : Superman Movies
+Xfers Test Movie App using Flutter
 
 ## Screenshots
 
