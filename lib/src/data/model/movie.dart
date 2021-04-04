@@ -38,6 +38,9 @@ class Movie {
 
   String posterUrl({String width = "w185"}) => "$imageUrl$width$poster_path";
 
+  String backdropUrl({String width = "w500"}) =>
+      "$imageUrl$width$backdrop_path";
+
   Movie copyWith({
     bool adult,
     String backdrop_path,

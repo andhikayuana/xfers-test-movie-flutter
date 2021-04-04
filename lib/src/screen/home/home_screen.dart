@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_movie_app/src/bloc/movie/movie_bloc.dart';
 import 'package:flutter_movie_app/src/bloc/movie/movie_event.dart';
 import 'package:flutter_movie_app/src/bloc/movie/movie_state.dart';
+import 'package:flutter_movie_app/src/data/model/movie.dart';
+import 'package:flutter_movie_app/src/screen/detail/detail_screen.dart';
 import 'package:flutter_movie_app/src/widget/bottom_loader.dart';
 import 'package:flutter_movie_app/src/widget/movie_card.dart';
 
@@ -77,6 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ? BottomLoader()
                       : MovieCard(
                           movie: state.movies[index],
+                          onTap: _onTapMovieItem,
                         );
                 },
               );
@@ -84,6 +87,12 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
       ),
+    );
+  }
+
+  _onTapMovieItem(Movie movie) {
+    Navigator.of(context).push(
+      DetailScreen.createRoute(movie),
     );
   }
 }
