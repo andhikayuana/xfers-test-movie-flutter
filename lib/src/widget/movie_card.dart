@@ -42,9 +42,9 @@ class MovieCard extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      width: 245,
+                      width: 230,
                       child: Text(
-                        movie.title,
+                        movie.title ?? "-",
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                         style: Theme.of(context).textTheme.headline6,
@@ -54,9 +54,9 @@ class MovieCard extends StatelessWidget {
                       height: 4,
                     ),
                     Container(
-                      width: 245,
+                      width: 230,
                       child: Text(
-                        movie.release_date,
+                        movie.release_date ?? "unknown",
                         style: Theme.of(context).textTheme.caption,
                       ),
                     ),
@@ -64,9 +64,9 @@ class MovieCard extends StatelessWidget {
                       height: 8,
                     ),
                     Container(
-                      width: 245,
+                      width: 230,
                       child: Text(
-                        movie.overview,
+                        movie.overview ?? "-",
                         maxLines: 5,
                         overflow: TextOverflow.ellipsis,
                       ),
